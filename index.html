@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tiny Voices: save the words they say, in their voice</title>
   <meta name="description" content="Tiny Voices is an iPhone and Apple Watch app for capturing the words and phrases your child says, in a tap, and playing them back for years. Private by design. No AI, ever.">
-  <meta name="theme-color" content="#E0E8DE" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#445840" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1A1816" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://tiny-voices-site.vercel.app/">
   <meta property="og:title" content="Tiny Voices">
@@ -24,7 +24,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="assets/mockups.css">
   <link rel="stylesheet" href="assets/site.css">
@@ -50,11 +50,11 @@
 
   <main id="main">
 
-    <!-- ========== HERO: drenched in the child's colour ========== -->
+    <!-- ========== HERO: the words are the hero ========== -->
     <section class="hero">
       <div class="wrap hero__grid">
         <div class="hero__copy">
-          <h1 class="display reveal">Every little word, in their own&nbsp;<span class="squiggle">voice<svg viewBox="0 0 200 18" preserveAspectRatio="none" aria-hidden="true"><path d="M2 12 C 20 2, 36 2, 52 10 S 86 18, 102 9 S 136 1, 152 9 S 186 16, 198 6" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span>.</h1>
+          <h1 class="display reveal">Every little word, in their own voice.</h1>
           <p class="lede reveal">Tiny Voices saves the words and phrases your child says, in one tap, with the date and their age. Years from now, you can still press play and hear exactly how they said it.</p>
           <div class="hero__actions reveal">
             <a class="appstore js-appstore" href="#" aria-label="Download on the App Store">
@@ -65,30 +65,14 @@
           <p class="hero__devices reveal">For iPhone and Apple Watch</p>
         </div>
 
-        <div class="hero__stage" aria-hidden="true">
-          <div class="blob blob--hero"></div>
-          <div class="phone phone--hero">
-            <div class="phone__screen screen-record">
-              <div class="statusbar"><span>9:41</span><span class="island"></span><span class="sb-icons"></span></div>
-              <div class="rec__top">
-                <span class="rec__child"><span class="avatar">M</span>Maya · 2y 1m</span>
-              </div>
-              <div class="rec__label"><span class="rec__dot"></span>Recording…</div>
-              <div class="rec__time js-timer">0:03</div>
-              <div class="wave wave--live" data-bars="38"></div>
-              <div class="rec__hint">Name it after. Trim if you need to.</div>
-              <div class="rec__stop"><span></span></div>
-            </div>
-          </div>
-          <figure class="note note--a">
-            <span class="note__word">“night night, moon”</span>
-            <span class="note__meta">Phrase · 2y 0m</span>
-          </figure>
-          <figure class="note note--b">
-            <span class="note__word">“uh-oh”</span>
-            <span class="note__meta">Word · 1y 4m</span>
-          </figure>
-        </div>
+        <ol class="words" aria-label="Examples of words and phrases saved in Tiny Voices">
+          <li class="words__item" style="--i:0"><span class="words__w">uh-oh</span><span class="words__age">1y 4m</span><span class="mini-wave" data-bars="9" aria-hidden="true"></span></li>
+          <li class="words__item words__item--in" style="--i:1"><span class="words__w">more please</span><span class="words__age">2y 1m</span><span class="mini-wave" data-bars="9" aria-hidden="true"></span></li>
+          <li class="words__item" style="--i:2"><span class="words__w">doggy</span><span class="words__age">1y 11m</span><span class="mini-wave" data-bars="9" aria-hidden="true"></span></li>
+          <li class="words__item words__item--in2" style="--i:3"><span class="words__w">night night, moon</span><span class="words__age">2y 0m</span><span class="mini-wave" data-bars="9" aria-hidden="true"></span></li>
+          <li class="words__item words__item--in" style="--i:4"><span class="words__w">big truck</span><span class="words__age">2y 1m</span><span class="mini-wave" data-bars="9" aria-hidden="true"></span></li>
+          <li class="words__item" style="--i:5"><span class="words__w">all done</span><span class="words__age">1y 9m</span><span class="mini-wave" data-bars="9" aria-hidden="true"></span></li>
+        </ol>
       </div>
 
       <div class="wrap">

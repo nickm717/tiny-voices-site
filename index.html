@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en" data-child-theme="sage">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiny Voices: save the words they say, in their voice</title>
+  <meta name="description" content="Tiny Voices is an iPhone and Apple Watch app for capturing the words and phrases your child says, in a tap, and playing them back for years. Private by design. No AI, ever.">
+  <meta name="theme-color" content="#FDF8F8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1A1816" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Tiny Voices">
+  <meta property="og:description" content="Save the words and phrases your child says, in their own voice.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Tiny Voices home">
+        <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="brand__name">Tiny Voices</span>
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#promise">Privacy</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="nav__cta js-appstore" href="#">Download</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">For iPhone &amp; Apple Watch</p>
+          <h1 class="display reveal">Every little word, <em>in their own voice.</em></h1>
+          <p class="lede reveal">Tiny Voices saves the words and phrases your child says, in one tap, with the date and their age. Years from now, you can still press play and hear exactly how they said it.</p>
+          <div class="hero__actions reveal">
+            <a class="appstore js-appstore" href="#" aria-label="Download on the App Store">
+              <img src="assets/app-store-badge.svg" alt="Download on the App Store" width="150" height="50">
+            </a>
+            <a class="textlink" href="#waitlist">Get notified at launch <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="theme-pick reveal" role="radiogroup" aria-label="Preview a child colour">
+            <span class="theme-pick__label">Every child gets a colour</span>
+            <button class="swatch" role="radio" data-theme="sage" aria-checked="true" aria-label="Sage"><span style="--c:#6A7E64"></span></button>
+            <button class="swatch" role="radio" data-theme="rose" aria-checked="false" aria-label="Rose"><span style="--c:#AC767C"></span></button>
+            <button class="swatch" role="radio" data-theme="slate" aria-checked="false" aria-label="Slate"><span style="--c:#68829E"></span></button>
+          </div>
+        </div>
+
+        <div class="hero__stage" aria-hidden="true">
+          <!-- Phone: live recording -->
+          <div class="phone phone--hero">
+            <div class="phone__screen screen-record">
+              <div class="statusbar"><span>9:41</span><span class="island"></span><span class="sb-icons"></span></div>
+              <div class="rec__top">
+                <span class="rec__child"><span class="avatar">M</span>Maya · 2y 1m</span>
+              </div>
+              <div class="rec__label"><span class="rec__dot"></span>Recording…</div>
+              <div class="rec__time js-timer">0:03</div>
+              <div class="wave wave--live" data-bars="38"></div>
+              <div class="rec__hint">Name it after. Trim if you need to.</div>
+              <div class="rec__stop"><span></span></div>
+            </div>
+          </div>
+
+          <!-- Floating word cards -->
+          <figure class="float-card float-card--a">
+            <button class="play" tabindex="-1"><span></span></button>
+            <div>
+              <div class="float-card__word">“night night, moon”</div>
+              <div class="float-card__meta"><span class="badge">Phrase</span>2y 0m · Sep 14</div>
+            </div>
+          </figure>
+          <figure class="float-card float-card--b">
+            <button class="play" tabindex="-1"><span></span></button>
+            <div>
+              <div class="float-card__word">“uh-oh”</div>
+              <div class="float-card__meta"><span class="badge">Word</span>1y 4m · Jan 3</div>
+            </div>
+          </figure>
+          <figure class="float-card float-card--c">
+            <div class="mini-wave" data-bars="16"></div>
+            <div class="float-card__meta">0:02</div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <ul class="entry-strip reveal" aria-label="Ways to start recording">
+          <li><span class="ico ico--lock"></span>Lock Screen</li>
+          <li><span class="ico ico--action"></span>Action Button</li>
+          <li><span class="ico ico--cc"></span>Control Center</li>
+          <li><span class="ico ico--watch"></span>Apple Watch</li>
+          <li class="entry-strip__note">Recording in under three seconds</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== WHY ========== -->
+    <section class="why">
+      <div class="wrap why__inner">
+        <p class="eyebrow reveal">Why it exists</p>
+        <p class="why__quote reveal">You have thousands of photos. You have hardly any recordings of <em>how they talk</em>: the little words, the first phrases, the voice that keeps changing while you aren't looking.</p>
+        <p class="why__body reveal">Tiny Voices is made for those moments. It's quick enough to catch them while you're holding a toddler, and calm enough to come back to on a slow Sunday.</p>
+      </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="how" id="how">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2 class="title">Tap. Name it. <em>Play it back forever.</em></h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="step__art step__art--tap">
+              <div class="tap-ring"></div><div class="tap-btn"><span class="ico ico--mic"></span></div>
+            </div>
+            <span class="step__n">01</span>
+            <h3>Tap to record</h3>
+            <p>Start from the Lock Screen, Action Button, Control Center, Apple Watch, or the app. It records straight away, so you don't miss the moment.</p>
+          </li>
+          <li class="step reveal">
+            <div class="step__art step__art--name">
+              <div class="field"><span class="field__label">Word or phrase</span><span class="field__val">more please<i class="caret"></i></span></div>
+              <div class="seg"><span class="is-on">Phrase</span><span>Word</span></div>
+            </div>
+            <span class="step__n">02</span>
+            <h3>Name it after</h3>
+            <p>Type what they said and add a note if you like. The date and their exact age are filled in for you. Trim the clip down to just the good part.</p>
+          </li>
+          <li class="step reveal">
+            <div class="step__art step__art--play">
+              <div class="row-mini"><button class="play" tabindex="-1"><span></span></button><div><b>more please</b><small>2y 1m · Oct 2</small></div><div class="mini-wave" data-bars="14"></div></div>
+            </div>
+            <span class="step__n">03</span>
+            <h3>Play it back, any time</h3>
+            <p>One tap plays it, instantly, even offline. Watch the collection grow week by week, and hear how much they've changed.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="features" id="features">
+
+      <!-- 1. Capture -->
+      <article class="feature wrap">
+        <div class="feature__copy reveal">
+          <p class="eyebrow">Capture</p>
+          <h2 class="title">Three seconds from <em>pocket to recording.</em></h2>
+          <p>Kids don't repeat things on request. So Tiny Voices doesn't make you open an app, find a button and fill in a form first. Start recording from the Lock Screen widget, Control Center or the Action Button, and type the word afterwards.</p>
+          <ul class="ticks">
+            <li>Record first, name it after</li>
+            <li>Audio, or video when you want to see their face too</li>
+            <li>A simple trim editor to cut it to just the good part</li>
+          </ul>
+        </div>
+        <div class="feature__art reveal" aria-hidden="true">
+          <div class="phone">
+            <div class="phone__screen screen-lock">
+              <div class="statusbar statusbar--light"><span></span><span class="island"></span><span class="sb-icons"></span></div>
+              <div class="lock__date">Sunday, October 18</div>
+              <div class="lock__time">9:41</div>
+              <div class="lock__widgets">
+                <div class="lock__widget lock__widget--round"><span class="ico ico--mic"></span></div>
+                <div class="lock__widget lock__widget--wide"><span class="ico ico--mic"></span><div><b>Tiny Voices</b><small>Tap to record Maya</small></div></div>
+              </div>
+              <div class="lock__notif">
+                <span class="app-ico" aria-hidden="true"><span class="brand__mark"><i></i><i></i><i></i><i></i><i></i></span></span>
+                <div><b>Saved: “big truck”</b><small>Maya · 2y 1m · 0:04</small></div>
+              </div>
+              <div class="lock__bottom"><span class="lock__btn"><span class="ico ico--torch"></span></span><span class="lock__btn"><span class="ico ico--cam"></span></span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Sessions -->
+      <article class="feature feature--flip wrap">
+        <div class="feature__copy reveal">
+          <p class="eyebrow">Sessions</p>
+          <h2 class="title">Leave it running. <em>Tap when it's good.</em></h2>
+          <p>Bath time, the car, a chatty breakfast. Start a session and put the phone down. When something lovely happens, tap the bookmark. Later, Tiny Voices takes you to each bookmark so you can clip it into its own word or phrase.</p>
+          <ul class="ticks">
+            <li>One big bookmark button, and no typing in the moment</li>
+            <li>Shown on the Lock Screen and in the Dynamic Island while it records</li>
+            <li>Clip some bookmarks now and the rest whenever you get to them</li>
+          </ul>
+        </div>
+        <div class="feature__art reveal" aria-hidden="true">
+          <div class="phone">
+            <div class="phone__screen screen-session">
+              <div class="statusbar"><span>9:41</span><span class="island island--live"><i class="rec__dot"></i><span class="mini-wave" data-bars="6"></span></span><span class="sb-icons"></span></div>
+              <div class="sess__head"><span class="textbtn">Done</span><b>Bath time</b><span class="textbtn">⋯</span></div>
+              <div class="sess__timer"><span class="rec__dot"></span>12:48</div>
+              <div class="sess__track">
+                <div class="wave wave--static" data-bars="44"></div>
+                <span class="bm" style="left:18%"></span>
+                <span class="bm" style="left:41%"></span>
+                <span class="bm" style="left:67%"></span>
+                <span class="bm bm--new" style="left:88%"></span>
+              </div>
+              <div class="sess__count">4 bookmarks</div>
+              <button class="bookmark-btn" tabindex="-1"><span class="ico ico--bookmark"></span>Bookmark</button>
+              <div class="sess__list">
+                <div class="sess__row"><span class="ico ico--bookmark-sm"></span>2:19<span class="pill">Clip</span></div>
+                <div class="sess__row is-done"><span class="ico ico--check"></span>“bubbles!”<span class="pill pill--done">Clipped</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Library -->
+      <article class="feature wrap">
+        <div class="feature__copy reveal">
+          <p class="eyebrow">Library</p>
+          <h2 class="title">A jar of words <em>you can actually listen to.</em></h2>
+          <p>Each word and phrase keeps its recording, the date, their age that day, and any note you added. Scroll back through months of them, search for one, and tap to hear it again.</p>
+          <ul class="ticks">
+            <li>Words and phrases, each with their own type</li>
+            <li>Sort, filter and search the whole collection</li>
+            <li>A separate library for every child</li>
+          </ul>
+        </div>
+        <div class="feature__art reveal" aria-hidden="true">
+          <div class="phone">
+            <div class="phone__screen screen-library">
+              <div class="statusbar"><span>9:41</span><span class="island"></span><span class="sb-icons"></span></div>
+              <div class="lib__head">
+                <span class="avatar avatar--lg">M</span>
+                <div><small>Maya</small><b>Library</b></div>
+              </div>
+              <div class="lib__search"><span class="ico ico--search"></span>Search 86 words &amp; phrases</div>
+              <div class="lib__chips"><span class="chip is-on">All</span><span class="chip">Words</span><span class="chip">Phrases</span></div>
+              <ul class="lib__list">
+                <li class="lib__row is-playing"><button class="play play--on" tabindex="-1"><span></span></button><div><b>big truck</b><small>Phrase · 2y 1m · Oct 18</small></div><span class="mini-wave mini-wave--live" data-bars="8"></span></li>
+                <li class="lib__row"><button class="play" tabindex="-1"><span></span></button><div><b>more please</b><small>Phrase · 2y 1m · Oct 2</small></div><span class="dur">0:03</span></li>
+                <li class="lib__row"><button class="play" tabindex="-1"><span></span></button><div><b>night night, moon</b><small>Phrase · 2y 0m · Sep 14</small></div><span class="dur">0:05</span></li>
+                <li class="lib__row"><button class="play" tabindex="-1"><span></span></button><div><b>doggy</b><small>Word · 1y 11m · Aug 9</small></div><span class="dur">0:02</span></li>
+                <li class="lib__row"><button class="play" tabindex="-1"><span></span></button><div><b>banana</b><small>Word · 1y 10m · Jul 21</small></div><span class="dur">0:02</span></li>
+              </ul>
+              <div class="fabs"><span class="fab fab--2"><span class="ico ico--mic"></span></span><span class="fab"><span class="ico ico--plus"></span></span></div>
+              <div class="tabbar"><span class="is-on">Library</span><span>Sessions</span><span>Insights</span><span>Settings</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Watch -->
+      <article class="feature feature--flip wrap">
+        <div class="feature__copy reveal">
+          <p class="eyebrow">Apple Watch</p>
+          <h2 class="title">Your phone's across the room. <em>Your wrist isn't.</em></h2>
+          <p>Start a session on Apple Watch and bookmark the good bits with a tap, without reaching for anything. The recording goes to your iPhone, ready to clip. If your iPhone is already recording, your Watch can drop bookmarks into that session too.</p>
+          <ul class="ticks">
+            <li>Records on the Watch itself</li>
+            <li>Sends sessions to your iPhone for clipping</li>
+            <li>Works as a remote for a session your iPhone is recording</li>
+          </ul>
+        </div>
+        <div class="feature__art reveal" aria-hidden="true">
+          <div class="watch">
+            <div class="watch__band watch__band--top"></div>
+            <div class="watch__case">
+              <div class="watch__crown"></div>
+              <div class="watch__screen">
+                <div class="w__top"><span class="w__child">Maya</span><span class="w__time">9:41</span></div>
+                <div class="w__timer"><span class="rec__dot"></span>3:07</div>
+                <div class="wave wave--live wave--watch" data-bars="18"></div>
+                <div class="w__btn"><span class="ico ico--bookmark"></span></div>
+                <div class="w__count">2 bookmarks</div>
+              </div>
+            </div>
+            <div class="watch__band watch__band--bottom"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Look back -->
+      <article class="feature wrap">
+        <div class="feature__copy reveal">
+          <p class="eyebrow">Look back</p>
+          <h2 class="title">Watch the collection <em>grow up with them.</em></h2>
+          <p>See how many words you've saved, find the very first one, the first phrase, and the month you caught the most. Typical speech milestones for their age sit quietly alongside, as something to look out for, never a score.</p>
+          <ul class="ticks">
+            <li>Counts what you've saved, not what they know</li>
+            <li>Firsts, phrases and your busiest month</li>
+            <li>CDC milestones as gentle reference, never a verdict</li>
+          </ul>
+        </div>
+        <div class="feature__art reveal" aria-hidden="true">
+          <div class="phone">
+            <div class="phone__screen screen-insights">
+              <div class="statusbar"><span>9:41</span><span class="island"></span><span class="sb-icons"></span></div>
+              <div class="ins__title">Insights</div>
+              <div class="ins__tiles">
+                <div class="tile"><small>Words saved</small><b>64</b></div>
+                <div class="tile"><small>Phrases saved</small><b>22</b></div>
+              </div>
+              <div class="card ins__chart">
+                <small class="card__label">Words saved, by week</small>
+                <svg viewBox="0 0 260 90" preserveAspectRatio="none" class="curve">
+                  <defs><linearGradient id="cg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity=".28"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs>
+                  <path d="M0 86 L20 84 L40 82 L60 79 L80 77 L100 72 L120 66 L140 61 L160 52 L180 46 L200 35 L220 27 L240 18 L260 10 L260 90 L0 90Z" fill="url(#cg)"/>
+                  <path d="M0 86 L20 84 L40 82 L60 79 L80 77 L100 72 L120 66 L140 61 L160 52 L180 46 L200 35 L220 27 L240 18 L260 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+                <small class="card__foot">Only the ones you've saved. Kids say far more.</small>
+              </div>
+              <div class="ins__row">
+                <div class="card card--first"><small class="card__label">First word</small><b>“mama”</b><small>1y 1m · Oct 2025</small></div>
+                <div class="card card--first"><small class="card__label">First phrase</small><b>“all done”</b><small>1y 9m · Jun 2026</small></div>
+              </div>
+              <div class="card card--milestone"><span class="badge badge--info">Around 2 years</span><small>Many children start putting two words together, like “more milk”.</small></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ========== PROMISE ========== -->
+    <section class="promise" id="promise">
+      <div class="wrap promise__grid">
+        <div class="promise__copy">
+          <p class="eyebrow reveal">Our promise</p>
+          <h2 class="title title--xl reveal">Your child's voice is <em>not training data.</em></h2>
+          <p class="reveal">Some apps in this space run AI on children's recordings, transcribing them, classifying them, even cloning their voices. We decided at the start that Tiny Voices never will. Not on your phone, not in the cloud, not as an option you can switch on.</p>
+          <ul class="vows reveal">
+            <li><span>✳︎</span>No AI on your child's voice, ever</li>
+            <li><span>✳︎</span>No transcription, no voice cloning</li>
+            <li><span>✳︎</span>No account to create</li>
+            <li><span>✳︎</span>No ads, no tracking, no data sold</li>
+            <li><span>✳︎</span>Everything lives on your iPhone</li>
+          </ul>
+        </div>
+        <div class="promise__files reveal" aria-label="Example of an iCloud Drive backup folder">
+          <div class="finder">
+            <div class="finder__bar"><i></i><i></i><i></i><span>iCloud Drive › Tiny Voices › Backup › Maya</span></div>
+            <ul class="finder__list">
+              <li><span class="f f--md"></span>_profile.md</li>
+              <li><span class="f f--audio"></span>2026-10-18 big truck.m4a</li>
+              <li><span class="f f--md"></span>2026-10-18 big truck.md</li>
+              <li><span class="f f--audio"></span>2026-10-02 more please.m4a</li>
+              <li><span class="f f--md"></span>2026-10-02 more please.md</li>
+              <li><span class="f f--audio"></span>2026-09-14 night night, moon.m4a</li>
+              <li class="finder__fade"><span class="f f--md"></span>2026-09-14 night night, moon.md</li>
+            </ul>
+          </div>
+          <p class="promise__caption"><b>A backup you can open without the app.</b> Turn on iCloud backup and every recording is saved to <em>your own</em> iCloud Drive as an ordinary audio file, named for your child and the word. Get a new phone and restore everything in a couple of taps.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq">
+      <div class="wrap faq__grid">
+        <header class="section-head reveal">
+          <p class="eyebrow">Questions</p>
+          <h2 class="title">Good to <em>know.</em></h2>
+        </header>
+        <div class="faq__list">
+          <details class="reveal" open>
+            <summary>Where are the recordings stored?</summary>
+            <p>On your iPhone. Recording and playback never need the internet. If you turn on iCloud backup, copies go to your own iCloud Drive as plain audio and text files, which only you can get to, and which you can open even without Tiny Voices.</p>
+          </details>
+          <details class="reveal">
+            <summary>Do you use AI on the recordings?</summary>
+            <p>No, and we never will. Tiny Voices doesn't transcribe, analyse, classify or synthesise your child's voice, on your device or anywhere else. You type the word yourself, which only takes a second.</p>
+          </details>
+          <details class="reveal">
+            <summary>Can I keep words for more than one child?</summary>
+            <p>Yes. Each child has their own profile, library and colour, and you can switch between them at the top of the app. Whoever's selected tints the whole app, so you always know whose words you're saving.</p>
+          </details>
+          <details class="reveal">
+            <summary>What's the difference between a quick recording and a session?</summary>
+            <p>A quick recording is for one word or phrase, right now: tap, record, name it. A session is for longer stretches, like bath time or a car ride. It keeps recording while you tap bookmarks, and you clip each bookmark into a word or phrase later.</p>
+          </details>
+          <details class="reveal">
+            <summary>Is this a speech development or milestone tracker?</summary>
+            <p>No. It's a keepsake. Insights count what you've chosen to save, which is always much less than what your child can say. Typical CDC milestones are shown as gentle reference, never as a score. If you have concerns about your child's speech, talk to your paediatrician.</p>
+          </details>
+          <details class="reveal">
+            <summary>Do I need an Apple Watch?</summary>
+            <p>No. Everything works on iPhone alone. The Watch app is a bonus for when your phone is out of reach. It records sessions on your wrist and sends them to your iPhone.</p>
+          </details>
+          <details class="reveal">
+            <summary>Can I get my recordings out?</summary>
+            <p>Always. Share any clip straight from the app, and the iCloud backup is a folder of ordinary .m4a audio files and text notes, so nothing is locked in.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA / WAITLIST ========== -->
+    <section class="cta" id="waitlist">
+      <div class="wrap">
+        <div class="cta__card reveal">
+          <div class="cta__wave" aria-hidden="true"><div class="wave wave--static wave--cta" data-bars="64"></div></div>
+          <div class="cta__copy">
+            <h2 class="title title--xl">The voice changes fast. <em>Start saving it today.</em></h2>
+            <p>Tiny Voices is coming to the App Store for iPhone and Apple Watch.</p>
+            <div class="cta__actions">
+              <a class="appstore js-appstore" href="#" aria-label="Download on the App Store">
+                <img src="assets/app-store-badge.svg" alt="Download on the App Store" width="150" height="50">
+              </a>
+            </div>
+            <form class="waitlist js-waitlist" novalidate>
+              <label for="email" class="waitlist__label">Or get an email when it launches</label>
+              <div class="waitlist__row">
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                <button type="submit">Notify Me</button>
+              </div>
+              <p class="waitlist__msg" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a class="brand" href="#top" aria-label="Tiny Voices home">
+        <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="brand__name">Tiny Voices</span>
+      </a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="privacy.html">Privacy Policy</a>
+        <a class="js-contact" href="#">Contact</a>
+      </nav>
+      <p class="footer__fine">© 2026 Tiny Voices. Apple, the Apple logo, iPhone and Apple Watch are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+    </div>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

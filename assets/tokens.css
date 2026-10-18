@@ -1,0 +1,133 @@
+/*
+ * Tiny Voices design tokens, as CSS custom properties.
+ * Source: nickm717/tiny-voices-context → design/design-tokens.json (exported from Figma).
+ * The Figma file is authoritative; re-sync this file when the tokens change.
+ */
+
+:root {
+  /* Surface */
+  --surface-background: #FDF8F8;
+  --surface-primary: #FFFEFA;
+  --surface-sunken: #F5F2EE;
+  --surface-fill: #EEEBE6;
+  --surface-fill-strong: #E3E0DB;
+
+  /* Border */
+  --border-default: #E2DED9;
+  --border-subtle: #EEEBE6;
+
+  /* Text */
+  --text-primary: #2D2824;
+  --text-secondary: #5A544E;
+  --text-muted: #827C76;
+  --text-faint: #AAA59E;
+  --text-on-action: #FDF8F8;
+
+  /* Action */
+  --action-primary: #2D2824;
+  --action-primary-hover: #413C37;
+  --action-primary-pressed: #504B46;
+  --action-secondary: #EEEBE6;
+  --action-secondary-hover: #E3E0DB;
+
+  /* Status */
+  --status-positive-fg: #487E54;
+  --status-positive-bg: #E8F4EA;
+  --status-attention-fg: #94702A;
+  --status-attention-bg: #F8F0DE;
+  --status-info-fg: #5276A4;
+  --status-info-bg: #E6F0FC;
+  --status-neutral-fg: #736E68;
+  --status-neutral-bg: #EEECE8;
+
+  /* Recording */
+  --recording-active: #D2584A;
+  --recording-active-bg: #FCE8E4;
+
+  /* Spacing (pt → px) */
+  --s-2: 2px; --s-4: 4px; --s-6: 6px; --s-8: 8px; --s-12: 12px; --s-16: 16px;
+  --s-20: 20px; --s-24: 24px; --s-32: 32px; --s-40: 40px; --s-48: 48px; --s-64: 64px;
+
+  /* Radius */
+  --r-xs: 4px; --r-sm: 8px; --r-md: 12px; --r-lg: 16px; --r-xl: 20px; --r-full: 9999px;
+
+  /* Type: SF Pro, as in the app */
+  --font-sf: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Child theme: sage (default) / rose / slate. Named for colours, as in the app (ChildTheme). */
+:root,
+[data-child-theme="sage"] {
+  --accent-primary: #6A7E64;
+  --accent-primary-light: #E0E8DE;
+  --accent-wash: #F2F6F1;
+  --accent-secondary: #8E826E;
+  --accent-on-surface: #52644E;
+  --accent-ring: #889E82;
+  --accent-badge-bg: #E8F0E6;
+  --accent-badge-fg: #445840;
+  --accent-waveform: #788E72;
+}
+[data-child-theme="rose"] {
+  --accent-primary: #AC767C;
+  --accent-primary-light: #F2E4E6;
+  --accent-wash: #FAF3F4;
+  --accent-secondary: #8C7E84;
+  --accent-on-surface: #945C64;
+  --accent-ring: #C0929A;
+  --accent-badge-bg: #F6EAEC;
+  --accent-badge-fg: #824E56;
+  --accent-waveform: #B08088;
+}
+[data-child-theme="slate"] {
+  --accent-primary: #68829E;
+  --accent-primary-light: #E0EAF4;
+  --accent-wash: #F1F5FA;
+  --accent-secondary: #76828E;
+  --accent-on-surface: #4E6884;
+  --accent-ring: #86A2BE;
+  --accent-badge-bg: #E6EEF8;
+  --accent-badge-fg: #3E5874;
+  --accent-waveform: #708EAC;
+}
+
+/* Dark appearance. Core tokens have dark values; the child-theme accents are light-only
+   in the token export, so the tinted surfaces are mixed against the dark background. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-background: #1A1816;
+    --surface-primary: #22201C;
+    --surface-sunken: #161412;
+    --surface-fill: #2C2A24;
+    --surface-fill-strong: #38352F;
+    --border-default: #38352F;
+    --border-subtle: #2C2A24;
+    --text-primary: #F5F2EE;
+    --text-secondary: #BEB9B2;
+    --text-muted: #8C8780;
+    --text-faint: #64605A;
+    --text-on-action: #1A1816;
+    --action-primary: #F5F2EE;
+    --action-primary-hover: #E1DCD6;
+    --action-primary-pressed: #CDC8C2;
+    --action-secondary: #2C2A24;
+    --action-secondary-hover: #38352F;
+    --status-positive-fg: #6EB478;
+    --status-positive-bg: #1C2A1E;
+    --status-attention-fg: #C8A555;
+    --status-attention-bg: #2A2418;
+    --status-info-fg: #82A8D2;
+    --status-info-bg: #1A222E;
+    --status-neutral-fg: #9B9690;
+    --status-neutral-bg: #282622;
+    --recording-active: #DC6456;
+    --recording-active-bg: #321C18;
+  }
+  :root, [data-child-theme] {
+    --accent-primary-light: color-mix(in srgb, var(--accent-primary) 30%, #1A1816);
+    --accent-wash: color-mix(in srgb, var(--accent-primary) 12%, #1A1816);
+    --accent-badge-bg: color-mix(in srgb, var(--accent-primary) 24%, #1A1816);
+    --accent-badge-fg: color-mix(in srgb, var(--accent-primary) 45%, #F5F2EE);
+    --accent-on-surface: color-mix(in srgb, var(--accent-primary) 55%, #F5F2EE);
+  }
+}

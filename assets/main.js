@@ -2,7 +2,6 @@
   "use strict";
   var cfg = window.TV_CONFIG || {};
   var root = document.documentElement;
-  root.classList.add("js");
 
   // --- Links from config ---
   document.querySelectorAll(".js-appstore").forEach(function (a) {
@@ -79,23 +78,23 @@
     onScroll();
   }
 
-  // --- Reveal on scroll, staggered within each parent ---
+  // --- Reveal on scroll. Only content that starts below the fold is hidden, so the first frame is complete. ---
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && !reduced) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.remove("is-pending"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
     reveals.forEach(function (el) {
+      if (el.getBoundingClientRect().top < window.innerHeight) return;
       var sibs = Array.prototype.filter.call(el.parentElement.children, function (c) {
         return c.classList.contains("reveal");
       });
       el.style.setProperty("--rd", (sibs.indexOf(el) * 0.08).toFixed(2) + "s");
+      el.classList.add("is-pending");
+      io.observe(el);
     });
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
-      });
-    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
-    reveals.forEach(function (el) { io.observe(el); });
-  } else {
-    reveals.forEach(function (el) { el.classList.add("is-in"); });
   }
 
   // --- Waitlist ---

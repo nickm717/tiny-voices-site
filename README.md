@@ -1,5 +1,7 @@
 # tiny-voices-site
 
+Live at **https://tiny-voices-site.vercel.app**. Every push to `main` redeploys it.
+
 Marketing micro-site for **Tiny Voices**, the iPhone and Apple Watch app for saving the words and phrases your child says, in their own voice.
 
 Product docs, design tokens and copy rules live in [`nickm717/tiny-voices-context`](https://github.com/nickm717/tiny-voices-context). The app lives in [`nickm717/tiny-voices`](https://github.com/nickm717/tiny-voices).
@@ -16,6 +18,7 @@ Static HTML, CSS and JS with no build step.
 | `assets/tokens.css` | Design tokens from `tiny-voices-context/design/design-tokens.json` as CSS variables, including the sage / rose / slate child themes and dark mode |
 | `assets/site.css` | Page styles. App screens are HTML/CSS mockups built from the tokens, not screenshots |
 | `assets/main.js` | Waveforms, child-colour picker, scroll reveals, waitlist form |
+| `assets/og-image.png` | 1200×630 social share image, rendered from the hero |
 | `assets/app-store-badge.svg` | **Stand-in** badge. Swap for Apple's official artwork before launch |
 
 ## Run locally
@@ -36,7 +39,8 @@ Vercel: import the repo with framework preset **Other**, no build command, and o
 - [ ] Replace `assets/app-store-badge.svg` with Apple's official badge
 - [ ] Review `privacy.html`, especially the analytics and crash-report claims, against the shipped app
 - [ ] Check feature copy against what ships. The site describes the full product vision, including Lock Screen / Action Button / Control Center capture, video, the Watch app and milestones, some of which aren't built yet
-- [ ] Optional: swap the HTML mockups for real screenshots, and add an `og:image`
+- [ ] Optional: swap the HTML mockups for real screenshots
+- [ ] If the site moves to its own domain, update the canonical, `og:url`, `og:image`, `robots.txt` and `sitemap.xml` URLs
 
 ## Keeping in sync with the design system
 

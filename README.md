@@ -29,6 +29,10 @@ Static HTML, CSS and JS with no build step.
 python3 -m http.server 8000   # then open http://localhost:8000
 ```
 
+## Changing CSS or JS
+
+After editing anything in `assets/`, run `python3 tools/version-assets.py`. It adds a content hash to each stylesheet and script link (`site.css?v=…`) so browsers fetch the new file instead of a cached one.
+
 ## Deploy
 
 Vercel: import the repo with framework preset **Other**, no build command, and output directory `.`. `vercel.json` turns on clean URLs (`/privacy`) and a few security headers.

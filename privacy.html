@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/site.css?v=6f9537d23b">
 </head>
 <body>
-  <!-- Draft written from the product docs (PRD-008, ADR-0006, ADR-0008). Have it reviewed before the App Store submission. -->
+  <!-- Reviewed against the app repo on 2026-10-19; see tiny-voices-context/product/privacy-policy-review.md for open questions. Not legal advice: have a lawyer sign off before the App Store submission. -->
   <header class="nav is-scrolled">
     <div class="wrap nav__inner">
       <a class="brand" href="index.html" aria-label="Tiny Voices home">
@@ -29,39 +29,96 @@
   <main class="legal">
     <div class="wrap legal__inner">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated October 18, 2026</p>
+      <p class="updated">Last updated October 19, 2026</p>
 
-      <p>Tiny Voices exists to keep recordings of your child safe for years, so we built it to collect as little as possible. In short: your recordings and notes stay on your devices and in your own iCloud account. We don't receive them, and we never run AI on them.</p>
+      <p>This policy covers the Tiny Voices app for iPhone and Apple Watch, and this website. The short version: the recordings, words, notes and children's details you add to Tiny Voices are stored on your own devices, and in your own iCloud Drive if you turn on backup. They aren't sent to us, and we don't run AI on them.</p>
+
+      <h2>Who we are</h2>
+      <!-- TODO before launch: replace with the legal name (and, if a company, its registered address) of whoever publishes the app on the App Store. -->
+      <p>Tiny Voices is made by an independent developer. "We" and "us" in this policy mean that developer. You can reach us at <a class="js-contact"><span class="js-contact-text">our contact address</span></a>.</p>
 
       <h2>What the app stores, and where</h2>
-      <p>Everything you create in Tiny Voices stays on your iPhone: recordings, the words and phrases you type, notes, your children's names, birthdates, photos and colours. Recording and playback work without an internet connection. We have no servers that receive this content, and no account is needed to use the app.</p>
+      <p>Everything you create in Tiny Voices is stored on your iPhone:</p>
+      <ul>
+        <li>recordings: the short clips of each word or phrase, and the full recordings of longer sessions</li>
+        <li>the words and phrases you type, with their dates, notes and categories</li>
+        <li>your children's names, birthdates and colour themes</li>
+        <li>your app settings</li>
+      </ul>
+      <p>Recording and playback work without an internet connection. No account is needed. We don't run servers that receive any of this, so we can't see it, and we couldn't hand it to anyone if asked.</p>
+      <p>This information is protected by your iPhone's own security, such as its passcode and encryption. Anyone who can unlock your iPhone can open the app and see it.</p>
+
+      <h2>What we receive</h2>
+      <p>Nothing you create in the app. What we do get comes from Apple:</p>
+      <ul>
+        <li>Download and sales figures that Apple combines across everyone who has the app, so they don't identify you.</li>
+        <li>Crash reports and basic usage statistics, but only if you've turned on <em>Share with App Developers</em> in your iPhone's Settings (Privacy &amp; Security › Analytics &amp; Improvements). Apple gives these to us without your name or Apple Account. They describe what the app was doing when it crashed and what kind of device you have. They don't include your recordings or anything you've typed into the app. You can turn this off at any time in the same place.</li>
+      </ul>
+      <p>Apple handles downloads and any payments under <a href="https://www.apple.com/legal/privacy/">Apple's own privacy policy</a>.</p>
 
       <h2>iCloud backup</h2>
-      <p>If you turn on iCloud backup, Tiny Voices copies your recordings and notes to the Tiny Voices folder in <em>your</em> iCloud Drive, as ordinary audio and text files. Apple stores those files under your Apple Account, as covered by Apple's privacy policy. We can't access them. You can turn backup off, or delete the files in the Files app, whenever you like.</p>
+      <p>iCloud backup is off until you turn it on. When it's on, Tiny Voices copies the following to a Tiny Voices folder in <em>your</em> iCloud Drive, as ordinary files you can open in the Files app:</p>
+      <ul>
+        <li>the recording of each word or phrase, as an audio file</li>
+        <li>a text file for each entry, with the word, its date, your child's age at the time, and any note or category</li>
+        <li>a text file for each child, with their name, birthdate and colour theme</li>
+      </ul>
+      <p>The full recordings of longer sessions are never copied to iCloud, because they can pick up other people (see <a href="#microphone">Microphone</a>).</p>
+      <p>Apple stores these files under your Apple Account, as covered by Apple's privacy policy. We have no access to them. They can be seen by anyone who can sign in to your Apple Account or open the Files app on one of your devices. Apple encrypts iCloud Drive. If you also turn on Apple's Advanced Data Protection, the files are end-to-end encrypted, which means Apple can't read them either.</p>
+      <p>Turning backup off stops new copies. It doesn't delete the files already in your iCloud Drive. You can delete them yourself in the Files app.</p>
+
+      <h2>Your iPhone's own backups</h2>
+      <p>This is separate from Tiny Voices' iCloud backup. If your iPhone is backed up with iCloud Backup or to a computer, that backup can include Tiny Voices' data, including session recordings. Apple or your computer looks after those backups, not us.</p>
 
       <h2>Apple Watch</h2>
-      <p>Sessions recorded on Apple Watch go straight from your Watch to your paired iPhone. Once your iPhone has a session, it's removed from the Watch.</p>
+      <p>A session you record on Apple Watch is saved on the Watch, then sent to your paired iPhone through Apple's built-in Watch connection. Once your iPhone has the session, it's removed from the Watch. Nothing passes through us.</p>
 
-      <h2>No AI, ever</h2>
-      <p>Tiny Voices doesn't transcribe, analyse, classify, clone or synthesise any recording, on your device or anywhere else. We don't use your recordings or data to train any model.</p>
+      <h2>Lock Screen</h2>
+      <p>While a session is recording, your child's name and the recording status appear on your Lock Screen and in the Dynamic Island. Anyone who can see your phone can see them there, without unlocking it.</p>
 
-      <h2>Microphone and camera</h2>
-      <p>Tiny Voices asks for microphone access, and camera access for video, only so you can record. Recording happens only when you start it, and iOS shows its recording indicator the whole time. Session recordings can pick up other people nearby, so we suggest deleting a session's full recording once you've clipped what you want. The app will remind you.</p>
+      <h2>Sharing</h2>
+      <p>If you share a recording or file from Tiny Voices, for example in a message, it goes to the person or app you choose. From then on their privacy practices apply, not this policy.</p>
+
+      <h2>No AI on your recordings</h2>
+      <p>Tiny Voices doesn't transcribe, analyse, classify, clone or synthesise any recording, either on your device or anywhere else. We don't use your recordings or data to train any AI model, and we never receive them in the first place. If we ever wanted to change this, we wouldn't apply the change to recordings you already have, and we'd ask your clear permission first.</p>
+      <p>This promise covers Tiny Voices and us. Once a file is shared, or saved in your iCloud Drive, other apps you use and Apple's own features may process it under their own terms.</p>
+
+      <h2 id="microphone">Microphone</h2>
+      <p>Tiny Voices asks for microphone access only so you can record, on iPhone and on Apple Watch. It records only after you start a recording. A session keeps recording if you lock your phone or switch apps, until you stop it. Your device shows its microphone indicator the whole time, and on iPhone a Live Activity shows that a session is running. Tiny Voices doesn't use the camera or your photo library.</p>
+      <p>Recordings can pick up other people nearby. In some places, everyone being recorded has to agree to it, and making sure you're allowed to record is up to you. Once you've saved the clips you want from a session, the app suggests deleting its full recording, and we recommend doing so.</p>
 
       <h2>Analytics, ads and tracking</h2>
-      <p>The app contains no advertising, no third-party analytics and no tracking SDKs, and it does not track you across other apps or websites. If you choose to share crash reports with developers through Apple, Apple gives us anonymous diagnostic data that doesn't include your recordings.</p>
-
-      <h2>This website</h2>
-      <p>If you join the launch waitlist, we store your email address, use it only to tell you when Tiny Voices is available, and delete it on request. A third-party form service may process the address on our behalf. Our hosting provider keeps standard server logs, and the site loads fonts from Google Fonts. The site sets no advertising or tracking cookies. It remembers which colour you picked in your own browser, and that never leaves your device.</p>
+      <p>The app contains no advertising, no third-party analytics and no tracking tools. It doesn't track you across other apps or websites, and we don't sell or share your personal information.</p>
 
       <h2>Children</h2>
-      <p>Tiny Voices is made for parents and caregivers, not for children to use themselves. Recordings of children stay on the parent's devices and iCloud account, as described above. We don't knowingly collect personal information from children.</p>
+      <p>Tiny Voices is made for parents and caregivers to use, not for children. What you record about your child stays on your devices and in your iCloud account, as described above. We don't collect personal information from children. If a child contacts us directly, we'll delete what they sent.</p>
 
       <h2>Deleting your data</h2>
-      <p>Delete any word, phrase or recording in the app. Deleting the app removes everything stored on your iPhone. iCloud backup files stay in your iCloud Drive until you delete them there.</p>
+      <ul>
+        <li><strong>A word or phrase.</strong> When you delete one, it disappears from your library, but it isn't gone yet. Its recording and details stay in the app's storage on your iPhone so it can be recovered, and if iCloud backup is on, its files move into a <em>Deleted</em> folder in your backup. You can remove those files in the Files app.</li>
+        <!-- TODO: once build-plan 1.20's 30-day bin ships, replace the item above with how and when deleted words are permanently removed. -->
+        <li><strong>A session's full recording.</strong> Deleting it removes the audio file from your iPhone. Clips you've already saved from it are kept.</li>
+        <li><strong>A child.</strong> Deleting a child removes them and all their words and recordings from your iPhone, along with their whole folder in your iCloud backup, including its <em>Deleted</em> folder.</li>
+        <li><strong>Everything.</strong> Deleting the app removes everything it stored on your iPhone. Files in your iCloud Drive stay until you delete them there, and your iPhone's own backups keep whatever they captured until they're replaced or deleted.</li>
+      </ul>
 
-      <h2>Changes and contact</h2>
-      <p>If this policy changes, we'll update the date at the top of this page. Questions? Email <a class="js-contact"><span class="js-contact-text">us</span></a>.</p>
+      <h2>This website</h2>
+      <ul>
+        <li><strong>Waitlist.</strong> If you join the launch waitlist, we collect your email address and use it only to tell you when Tiny Voices is available. We don't add it to other lists, sell it or share it. A form service stores it for us on our behalf. We keep it until we've told you about the launch or until you ask us to remove it, whichever comes first. To be removed, email us.</li>
+        <!-- TODO when waitlistEndpoint is set: name the form service (e.g. "Formspree, in the United States") in the item above. -->
+        <li><strong>Hosting.</strong> The site is hosted by Vercel. Like most web hosts, it keeps short-term logs of requests, including your IP address and browser type, to run and secure the site.</li>
+        <li><strong>Fonts.</strong> The site loads a font from Google Fonts, so your browser sends Google its IP address when the page loads.</li>
+        <li><strong>Cookies.</strong> The site sets no cookies. It remembers which colour you picked using your browser's own storage, and that stays on your device. Because we don't track you, the site works the same whether or not your browser sends a "Do Not Track" signal.</li>
+      </ul>
+
+      <h2>Your rights</h2>
+      <p>Depending on where you live, you may have the right to ask what personal information we hold about you, and to have it corrected or deleted. In practice, the only personal information we hold is your email address, if you joined the waitlist or emailed us. Everything in the app is already in your hands, and you can view or delete it there yourself. To make a request, email us. If you're in the UK or the European Union, we use your waitlist email because you asked us to, and you can withdraw that at any time. You can also complain to your local data protection authority.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>When this policy changes, we'll update the date at the top of this page. If a change matters to how your information is handled, we'll also say so in the app or in the release notes before it applies.</p>
+
+      <h2>Contact</h2>
+      <p>Questions or requests? Email <a class="js-contact"><span class="js-contact-text">us</span></a>.</p>
     </div>
   </main>
 

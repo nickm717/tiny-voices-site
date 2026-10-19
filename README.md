@@ -16,7 +16,9 @@ Static HTML, CSS and JS with no build step.
 | `privacy.html` | Privacy policy (draft, needs review before App Store submission) |
 | `assets/config.js` | **Edit this.** App Store URL, waitlist endpoint, contact email |
 | `assets/tokens.css` | Design tokens from `tiny-voices-context/design/design-tokens.json` as CSS variables, including the sage / rose / slate child themes and dark mode |
-| `assets/site.css` | Page styles. App screens are HTML/CSS mockups built from the tokens, not screenshots |
+| `assets/site.css` | Page styles (direction A, "Storybook") |
+| `assets/mockups.css` | App screens drawn in HTML/CSS from the tokens. To be replaced by real screenshots with animated layers on top |
+| `PRODUCT.md` | Design context (audience, personality, anti-references) used by design reviews |
 | `assets/main.js` | Waveforms, child-colour picker, scroll reveals, waitlist form |
 | `assets/og-image.png` | 1200×630 social share image, rendered from the hero |
 | `assets/app-store-badge.svg` | **Stand-in** badge. Swap for Apple's official artwork before launch |

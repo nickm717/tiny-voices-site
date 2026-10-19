@@ -77,7 +77,7 @@ button { font: inherit; color: inherit; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
 .brand__name { font-family: var(--display); font-size: 21px; letter-spacing: -.01em; }
 .brand__mark { display: inline-flex; align-items: center; gap: 2.5px; height: 22px; }
-.brand__mark i { display: block; width: 3.5px; border-radius: 3px; background: var(--accent-deep); }
+.brand__mark i { display: block; width: 3.5px; border-radius: 3px; background: var(--accent-ink); } /* ink lightens in dark mode, where the hero is the deep colour */
 .brand__mark i:nth-child(1) { height: 8px; } .brand__mark i:nth-child(2) { height: 16px; }
 .brand__mark i:nth-child(3) { height: 22px; } .brand__mark i:nth-child(4) { height: 12px; }
 .brand__mark i:nth-child(5) { height: 6px; }
@@ -199,7 +199,6 @@ button { font: inherit; color: inherit; }
 .tap-btn .ico { width: 28px; height: 28px; }
 .tap-ring { position: absolute; width: 72px; height: 72px; border-radius: 50%; border: 2px solid var(--recording-active); animation: ring 2.4s var(--ease) infinite; }
 @keyframes ring { from { transform: scale(1); opacity: .7; } to { transform: scale(2); opacity: 0; } }
-.path__art--name { width: 160px; }
 .field { width: 190px; background: var(--surface-primary); border: 1.5px solid var(--accent-primary); border-radius: var(--r-md); padding: 10px 14px; display: flex; flex-direction: column; box-shadow: 0 10px 24px -14px rgba(45,40,36,.45); }
 .field__label { font-size: 12px; color: var(--text-muted); }
 .field__val { font-size: 17px; font-weight: 600; white-space: nowrap; }
@@ -219,7 +218,12 @@ button { font: inherit; color: inherit; }
   .path__stop { grid-template-columns: 100px 1fr; }
   .path__art { width: 100px; height: 100px; transform: none; }
   .path__art .tap-btn, .path__art .tap-ring { width: 56px; height: 56px; }
-  .path__art .field { width: 150px; transform: scale(.66); }
+  /* Sized to fit inside the circle: Safari start-aligns a grid item that overflows its track */
+  .path__art .field { width: 98px; padding: 7px 8px; border-radius: var(--r-sm); }
+  .path__art .field__val { letter-spacing: -.01em; }
+  .path__art .field__label { display: none; }
+  .path__art .field__val { font-size: 13px; }
+  .path__art .caret { height: 14px; }
   .mini-wave--big { height: 38px; gap: 2px; } .mini-wave--big i { width: 3px; }
 }
 
@@ -268,6 +272,7 @@ button { font: inherit; color: inherit; }
   .band__head { grid-template-columns: 1fr; }
   .timeline__track { height: 240px; }
   .flag:nth-child(n+4) { display: none; }
+  .wave--timeline i:nth-child(2n) { display: none; } /* 120 fixed-width bars need 360px */
 }
 
 /* ---------- Look back: a timeline of firsts ---------- */
@@ -293,6 +298,7 @@ button { font: inherit; color: inherit; }
 /* ---------- Promise ---------- */
 .promise { background: var(--promise-bg); color: #F5F2EE; padding: clamp(88px, 11vw, 150px) 0; border-radius: clamp(32px, 5vw, 72px); margin: 0 clamp(0px, 1.2vw, 16px); transition: background-color .5s var(--ease); }
 .promise .title { color: #F5F2EE; }
+.promise__grid > * { min-width: 0; } /* long filenames in the Files mockup must not widen the column */
 .promise__grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(40px, 6vw, 96px); align-items: center; }
 .promise__copy > p { color: #CFCAC3; font-size: 18px; line-height: 1.65; max-width: 32em; margin: 28px 0 0; }
 .vows { list-style: none; margin: 36px 0 0; padding: 0; display: grid; gap: 14px; }
